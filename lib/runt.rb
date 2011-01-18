@@ -30,19 +30,18 @@
 # implied warranties, including, without limitation, the implied
 # warranties of merchantibility and fitness for a particular
 # purpose.
-
+dirname = File.dirname(__FILE__)
 require 'yaml'
 require 'time'
 require 'date'
 require 'date/format'
-require "runt/dprecision"
-require "runt/pdate"
-require "runt/temporalexpression"
-require "runt/schedule"
-require "runt/daterange"
-require "runt/sugar"
-require "runt/expressionbuilder"
-
+require "#{dirname}/runt/dprecision"
+require "#{dirname}/runt/pdate"
+require "#{dirname}/runt/temporalexpression"
+require "#{dirname}/runt/schedule"
+require "#{dirname}/runt/daterange"
+require "#{dirname}/runt/sugar"
+require "#{dirname}/runt/expressionbuilder"
 #
 # The Runt module is the main namespace for all Runt modules and classes. Using
 # require statements, it makes the entire Runt library available.It also

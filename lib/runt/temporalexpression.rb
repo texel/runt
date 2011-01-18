@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'date'
-require 'runt/dprecision'
-require 'runt/pdate'
+require "#{File.dirname(__FILE__)}/dprecision"
+require "#{File.dirname(__FILE__)}/pdate"
 require 'pp'
 
 #

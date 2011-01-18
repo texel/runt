@@ -110,7 +110,7 @@
 #    DIMonth.new(Last, Tuesday)
 # 
 
-require 'runt'
+require "#{File.dirname(__FILE__)}/../runt"
 
 module Runt
   MONTHS = '(january|february|march|april|may|june|july|august|september|october|november|december)'

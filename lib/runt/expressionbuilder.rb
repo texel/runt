@@ -1,4 +1,5 @@
-require 'runt'
+require "#{File.dirname(__FILE__)}/../runt"
+
 
 # Convenience class for building temporal expressions in a more 
 # human-friendly way. Used in conjunction with shortcuts defined in the 

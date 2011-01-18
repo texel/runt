@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require 'runt'
+require "#{File.dirname(__FILE__)}/../runt"
 require 'date'
 
 module Runt
