@@ -38,9 +38,9 @@ PKG_FILES = FileList[
 if(RUBY_PLATFORM =~ /win32/i)
   PKG_EXEC_TAR = false
 else
-  PKG_EXEC_TAR = true 
+  PKG_EXEC_TAR = true
 end
-  
+
 # build directory
 TARGET_DIR = "target"
 
@@ -75,7 +75,7 @@ end
 Rake::TestTask.new do |t|
   t.libs << "test" << "examples"
   t.pattern = '**/*test.rb'
-  t.verbose = false	
+  t.verbose = false
   t.warning = false
 end
 
@@ -114,16 +114,16 @@ else
     s.homepage = 'http://runt.rubyforge.org'
     s.has_rdoc = true
     s.rdoc_options += %w{--main README --title Runt}
-    s.extra_rdoc_files = FileList["README","CHANGES","TODO","LICENSE.txt","doc/*.rdoc"]    
+    s.extra_rdoc_files = FileList["README","CHANGES","TODO","LICENSE.txt","doc/*.rdoc"]
     s.test_files = Dir['**/*test.rb']
     s.rubyforge_project = 'runt'
     s.description = <<EOF
 Runt is a Ruby version of temporal patterns by
 Martin Fowler. Runt provides an API for scheduling
- recurring events using set-like semantics. 
+ recurring events using set-like semantics.
 EOF
   end
-  
+
   Rake::GemPackageTask.new(spec) do |pkg|
     pkg.need_zip = true
     pkg.need_tar = PKG_EXEC_TAR
